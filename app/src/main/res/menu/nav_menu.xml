@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/fragment_01"
+            android:icon="@drawable/headimg"
+            android:title="头像" />
+        <item
+            android:id="@+id/fragment_02"
+            android:icon="@drawable/nickname"
+            android:title="昵称" />
+        <item
+            android:id="@+id/fragment_03"
+            android:icon="@drawable/signature"
+            android:title="个性签名" />
+        <item
+            android:id="@+id/fragment_04"
+            android:icon="@drawable/pwd"
+            android:title="密码" />
+        <item
+            android:id="@+id/fragment_05"
+            android:icon="@drawable/exit"
+            android:title="退出登录" />
+    </group>
+</menu>

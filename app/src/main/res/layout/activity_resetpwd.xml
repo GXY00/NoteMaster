@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置密码"
+        android:textSize="30sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_account"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="#F5F5F5"
+        android:hint="用户名"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edt_mail"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="#F5F5F5"
+        android:hint="邮箱"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/edt_pwd"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="#F5F5F5"
+        android:hint="新密码"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/vcode"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:background="#F5F5F5"
+            android:hint="输入验证码"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            />
+
+        <com.example.notemaster.GetVcodeButton
+            android:id="@+id/getcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="获取验证码"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="确认修改"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

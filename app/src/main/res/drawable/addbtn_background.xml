@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义椭圆形状 -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FCC307" />
+        </shape>
+    </item>
+
+    <!-- 在背景上添加十字 -->
+    <item>
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24.0"
+            android:viewportHeight="24.0">
+            <path
+                android:pathData="M12,5 L12,19 M5,12 L19,12"
+                android:strokeColor="#FFFFFF"
+                android:strokeWidth="2" />
+        </vector>
+    </item>
+</layer-list>

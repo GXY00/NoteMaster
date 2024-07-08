@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_marginVertical="5dp"
+            />
+
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="编辑标题" />
+
+        <ImageButton
+            android:id="@+id/morebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/more"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="5dp"
+            android:text="时间"/>
+
+        <TextView
+            android:id="@+id/loctext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="5dp"
+            android:text="地点"/>
+
+    </LinearLayout>
+
+    <com.widemouth.library.wmview.WMEditText
+        android:id="@+id/WMEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <com.widemouth.library.wmview.WMToolContainer
+        android:id="@+id/WMToolContainer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/completeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完成"
+        android:background="#126bae"
+        android:textColor="@android:color/white"
+        />
+
+</LinearLayout>

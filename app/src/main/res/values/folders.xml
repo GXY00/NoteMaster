@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="folders">
+        <item>分类</item>
+        <item>小</item>
+        <item>默认</item>
+        <item>大</item>
+        <item>超级大</item>
+    </string-array>
+</resources>
